@@ -22,3 +22,8 @@ fruitsSelect.addEventListener("input", e => {
   console.log(e);
   formData["fruits"] = e.target.value;
 });
+
+terms.addEventListener("input", e => {
+  console.log(e);
+  formData["terms"] = e.target.checked;
+});

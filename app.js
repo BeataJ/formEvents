@@ -1,6 +1,6 @@
 // const form = document.querySelector("#signup-form");
 
-const creditCard = document.querySelector("#cc");
+const creditCardInput = document.querySelector("#cc");
 const terms = document.querySelector("#terms");
 const fruitsSelect = document.querySelector("#fruits");
 
@@ -13,7 +13,7 @@ const fruitsSelect = document.querySelector("#fruits");
 // });
 
 const formData = {};
-creditCard.addEventListener("input", e => {
+creditCardInput.addEventListener("input", e => {
   console.log(e);
   formData["cc"] = e.target.value;
 });

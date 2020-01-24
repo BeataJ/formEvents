@@ -13,17 +13,25 @@ const fruitsSelect = document.querySelector("#fruits");
 // });
 
 const formData = {};
-creditCardInput.addEventListener("input", e => {
-  console.log(e);
-  formData["cc"] = e.target.value;
-});
+for (let input of [creditCardInput, terms, fruitsSelect]) {
+  input.addEventListener("input", e => {
+    formData[e.target.name] = e.target.value;
+  });
+}
 
-fruitsSelect.addEventListener("input", e => {
-  console.log(e);
-  formData["fruits"] = e.target.value;
-});
+//
+//
+// creditCardInput.addEventListener("input", e => {
+//   console.log(e);
+//   formData["cc"] = e.target.value;
+// });
 
-terms.addEventListener("input", e => {
-  console.log(e);
-  formData["terms"] = e.target.checked;
-});
+// fruitsSelect.addEventListener("input", e => {
+//   console.log(e);
+//   formData["fruits"] = e.target.value;
+// });
+
+// terms.addEventListener("input", e => {
+//   console.log(e);
+//   formData["terms"] = e.target.checked;
+// });

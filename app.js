@@ -17,6 +17,7 @@ for (let input of [creditCardInput, terms, fruitsSelect]) {
   input.addEventListener("input", ({ target }) => {
     const { name, type, value, checked } = target;
     formData[name] = type === "checkbox" ? checked : value;
+    console.log(formData);
   });
 }
 

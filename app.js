@@ -11,3 +11,14 @@ const fruitsSelect = document.querySelector("#fruits");
 //   console.log("fruits :", fruitsSelect.value);
 //   e.preventDefault();
 // });
+
+const formData = {};
+creditCard.addEventListener("input", e => {
+  console.log(e);
+  formData["cc"] = e.target.value;
+});
+
+fruitsSelect.addEventListener("input", e => {
+  console.log(e);
+  formData["fruits"] = e.target.value;
+});
